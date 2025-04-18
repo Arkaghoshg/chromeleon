@@ -1,0 +1,44 @@
+body{
+    text-align: center;
+    
+}
+div {
+    height: 40px;
+    width: 200px;
+    border: 2px solid rgb(2, 90, 9);
+    margin: auto;
+    border-radius: 30px;
+    padding-top: 20px;
+    
+}
+
+button {
+    background-color: rgb(2, 90, 9,0.5);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(2, 90, 9,0.8);
+    transition: 0.5s;
+}
+
+.chameleon-mask {
+  width: 400px;
+  height: 300px; /* match the chameleon image size */
+  
+  background-color: rgb(2, 90, 9); /* The color to "paint" the chameleon */
+  
+  /* Apply the PNG as a mask */
+  -webkit-mask-image: url('./chameleon.png');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  -webkit-mask-position: center;
+
+  mask-image: url('./chameleon.png');
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+}
